@@ -6,7 +6,7 @@ struct User {
     var saldo: Double
 }
 
-struct CustomViewController: View {
+struct ViewController: View {
     @State private var user = User(deposito: 0, saque: 0, saldo: 0)
     @State private var escolha: Int = -1
     @State private var valor: String = ""
@@ -71,6 +71,6 @@ struct CustomViewController: View {
 
 struct ContentView_Previews: PreviewProvider{
     static var previews: some View{
-        CustomViewController()
+        ViewController()
     }
 }
